@@ -48,8 +48,15 @@ h5{
     font-family: 'Barlow Condensed';
     font-size: 28px;
     letter-spacing: 4.75;
-    color: var(--Gray);
+    color: var(--white);
     /* margin: 0; */
+}
+
+.h5Number{
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    letter-spacing: 4.75;
+    color: rgba(255, 255, 255, 0,25);
 }
 
 .--Subheading1{
@@ -157,6 +164,10 @@ a{
         background-image: url(assets/home/background-home-desktop.jpg);
     }
 
+    .--DesktopDestination{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+    }
+
     .HomeTextBlock{
         width: 450px;
         height: 382px;
@@ -169,5 +180,45 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: left;
+    }
+
+    .MainButton{
+        border-radius: 50%;
+        width: 274px;
+        height: 274px;
+        background-color: var(--White);
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        top: 495px;
+        right: 165px;
+    }
+
+    .MainButton:hover{
+        outline: solid 88px rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+
+    .MainButton_Text{
+        font-size: 32px;
+        font-family: Bellefair;
+    }
+
+    .DestinationText{
+        position: absolute;
+ 
+        height: 34px;
+        width: 382px;
+
+        top: 212px;
+        left: 167px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
