@@ -3,13 +3,14 @@ body{
 }
 
 :root{
-    --Dark: rgb(11, 13, 23);
-    --Gray: rgb(208, 214, 249);
-    --White: rgb(255, 255, 255);
+    --Dark: rgba(11, 13, 23);
+    --Gray: rgba(208, 214, 249);
+    --White: rgba(255, 255, 255);
     --TopBar: rgba(255, 255, 255, 4%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 
 h1{
     font-family: Bellefair;
@@ -24,7 +25,7 @@ h2{
     font-size: 100px;
     font-weight: 400;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
 }
 
 h3{
@@ -32,7 +33,7 @@ h3{
     font-size: 56px;
     font-weight: 400;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
 }
 
 h4{
@@ -40,22 +41,22 @@ h4{
     font-size: 56px;
     font-weight: 400;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
 }
 
 h5{
     font-family: 'Barlow Condensed';
     font-size: 28px;
     letter-spacing: 4.75;
-    color: var(--White);
-    margin: 0;
+    color: var(--Gray);
+    /* margin: 0; */
 }
 
 .--Subheading1{
     font-family: Bellefair;
     font-size: 28px;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
 }
 
 .--Subheading2{
@@ -63,15 +64,26 @@ h5{
     font-size: 14px;
     letter-spacing: 2.35;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
 }
 
-nav{
+.NavText{
     font-family: 'Barlow Condensed';
     font-size: 16px;
     letter-spacing: 2.7;
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
+}
+
+p{
+    font-family: 'Barlow Condensed';
+    font-size: 18px;
+    font-weight: lighter;
+    color: var(--White); 
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -101,6 +113,7 @@ nav{
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
 
     .TopBar-Line{
@@ -112,6 +125,25 @@ nav{
         left: 443;
     }
 
+    .NavSwitch{
+        height: 100%;
+        margin: 0px 48px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .NavSwitch--hover:hover{
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+     
+    .NavSwitch--active{
+        border-bottom: 3px solid var(--White);
+    }
 
     
     .Contener{
@@ -123,5 +155,19 @@ nav{
 
     .--DesktopHome{
         background-image: url(assets/home/background-home-desktop.jpg);
+    }
+
+    .HomeTextBlock{
+        width: 450px;
+        height: 382px;
+        position: absolute;
+        top: 387px;
+        left: 165px;
+        box-sizing: border-box;
+        padding-right: 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
     }
 }
