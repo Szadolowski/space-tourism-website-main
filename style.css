@@ -25,7 +25,7 @@ h2{
     font-size: 100px;
     font-weight: 400;
     color: var(--White);
-    /* margin: 0; */
+    margin: 0;
 }
 
 h3{
@@ -47,23 +47,25 @@ h4{
 h5{
     font-family: 'Barlow Condensed';
     font-size: 28px;
-    letter-spacing: 4.75;
-    color: var(--white);
+    letter-spacing: 4.75px;
+    color: var(--White);
+    font-weight: lighter;
     /* margin: 0; */
 }
 
 .h5Number{
     font-family: 'Barlow Condensed';
     font-size: 28px;
+    font-weight: bold;
     letter-spacing: 4.75;
-    color: rgba(255, 255, 255, 0,25);
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .--Subheading1{
     font-family: Bellefair;
     font-size: 28px;
     color: var(--White);
-    /* margin: 0; */
+    margin: 0;
 }
 
 .--Subheading2{
@@ -71,7 +73,7 @@ h5{
     font-size: 14px;
     letter-spacing: 2.35;
     color: var(--White);
-    /* margin: 0; */
+    margin: 0;
 }
 
 .NavText{
@@ -86,7 +88,7 @@ p{
     font-family: 'Barlow Condensed';
     font-size: 18px;
     font-weight: lighter;
-    color: var(--White); 
+    color: var(--Gray); 
 }
 
 a{
@@ -120,7 +122,11 @@ a{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        padding-left: 123px;
+        padding-right: 165px;
     }
 
     .TopBar-Line{
@@ -134,7 +140,7 @@ a{
 
     .NavSwitch{
         height: 100%;
-        margin: 0px 48px;
+        /* margin: 0px 48px; */
 
         box-sizing: border-box;
 
@@ -142,6 +148,8 @@ a{
         justify-content: center;
         align-items: center;
         flex-direction: row;
+
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
     }
 
     .NavSwitch--hover:hover{
@@ -220,5 +228,73 @@ a{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .DestinationIMG{
+        height: 445px;
+        width: 445px;
+
+        position: absolute;
+        top: 343px;
+        left: 230px;
+    }
+
+    .DestinationRightBlock{
+        height: 472px;
+        width: 445px;
+
+        position: absolute;
+        top: 310px;
+        right: 163px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .DestinationNav{
+        height: 34px;
+        width: 286px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .DestinationName{
+        margin-top: 37px;
+        margin-bottom: 14px;
+    }
+
+    .DestinationDescription{
+        height: auto;
+        margin-bottom: 54px;
+    }
+
+    .Line{
+        height: 1px;
+        width: 100%;
+        background-color: rgb(56, 59, 75);
+    }
+
+    .DestinationInformation{
+        width: 100%;
+        height: 61px;
+        margin-top: 28px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Information{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
     }
 }
