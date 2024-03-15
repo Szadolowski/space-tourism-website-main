@@ -44,30 +44,6 @@ h4{
     margin: 0;
 }
 
-.CrewRole{
-    font-family: Bellefair;
-    font-size: 32px;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: lighter;
-}
-
-h5{
-    font-family: 'Barlow Condensed';
-    font-size: 28px;
-    letter-spacing: 4.75px;
-    color: var(--White);
-    font-weight: lighter;
-    /* margin: 0; */
-}
-
-.h5Number{
-    font-family: 'Barlow Condensed';
-    font-weight: bold;
-    letter-spacing: 4.75;
-    margin-right: 24px;
-    color: rgba(255, 255, 255, 0.25);
-}
-
 .--Subheading1{
     font-family: Bellefair;
     font-size: 28px;
@@ -133,17 +109,54 @@ a{
     border: black solid 2px;
 }
 
+/*  */
+
+.TopBar-Block{
+    height: 96px;
+} 
 
 @media only screen and (min-width: 769px) {
+    h5{
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        color: var(--White);
+        font-weight: lighter;
+        /* margin: 0; */
+    }
+    
+    .h5Number{
+        font-family: 'Barlow Condensed';
+        font-weight: bold;
+        letter-spacing: 4.75;
+        margin-right: 24px;
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    .NavTextNumber{
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        letter-spacing: 2.7;
+        color: var(--White);
+        /* margin: 0; */
+    }
+
+    .CrewRole{
+        font-family: Bellefair;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+    }
+
     .TopBar{
+        padding-left: 55px;
+        top: 40px;
+
         position: absolute;
         height: 96px;
         width: 100%;
-
+    
         box-sizing: border-box;
-
-        padding-left: 55px;
-        top: 40px;
 
         display: flex;
         flex-direction: row;
@@ -206,11 +219,11 @@ a{
         background-size: cover;
     }
 
-    .--DesktopHome{
+    .--Home{
         background-image: url(assets/home/background-home-desktop.jpg);
     }
 
-    .--DesktopDestination{
+    .--Destination{
         background-image: url(assets/destination/background-destination-desktop.jpg);
     }
 
@@ -276,7 +289,7 @@ a{
         left: 230px;
     }
 
-    .DestinationRightBlock{
+    .DestinationTextBlock{
         height: 472px;
         width: 445px;
 
@@ -309,13 +322,9 @@ a{
         margin-bottom: 54px;
     }
 
-    .Line{
-        height: 1px;
-        width: 100%;
-        background-color: rgb(56, 59, 75);
-    }
-
     .DestinationInformation{
+        border-top: solid 1px rgb(56, 59, 75);
+        padding-top: 28px;
         width: 100%;
         height: 61px;
         margin-top: 28px;
@@ -335,7 +344,7 @@ a{
         align-items: left;
     }
 
-    .--DesktopCrew{
+    .--Crew{
         background-image: url(assets/crew/background-crew-desktop.jpg);
         display: flex;
         flex-direction: row;
@@ -363,9 +372,8 @@ a{
     }
 
     .RadioBox{
-        margin-top: 120px;
+        margin-top: 545px;
         position: absolute;
-        bottom: 545px;
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
@@ -452,5 +460,286 @@ a{
         text-wrap: nowrap;
     }
 
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 376px){
+    .NavTextNumber{
+        width: 0;
+        height: 0;
+        font-size: 0px;
+    }
+
+    h5{
+        font-family: 'Barlow Condensed';
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        color: var(--White);
+        font-weight: lighter;
+        /* margin: 0; */
+    }
+    
+    .h5Number{
+        font-family: 'Barlow Condensed';
+        font-weight: bold;
+        margin-right: 24px;
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    h4{
+        font-family: Bellefair;
+        font-size: 40px;
+        color: var(--White);
+        margin: 0;
+    }
+
+    .CrewRole{
+        font-family: Bellefair;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+    }
+
+    .TopBar{
+        padding-left: 55px;
+        position: absolute;
+        height: 96px;
+        width: 100%;
+        
+        box-sizing: border-box;
+
+        padding-left: 39;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .TopBar-Block{
+        width: 450px;
+        height: 100%;
+
+        background-color: var(--TopBar);
+
+        background-color: var(--TopBar);
+        backdrop-filter: blur(10px);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        padding-left: 48px;
+        padding-right: 46px;
+    }
+
+    .TopBar-Line{
+        position: absolute;
+        top: 200px;
+    }
+
+    .NavSwitch{
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+    }
+
+    .NavSwitch--hover:hover{
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+     
+    .NavSwitch--active{
+        border-bottom: 3px solid var(--White);
+    }
+
+    .Contener{
+        min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .--Home{
+        background-image: url(assets/home/background-home-tablet.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 120px;
+        box-sizing: border-box;
+    }
+
+    .--Subheading1{
+        color: var(--Gray);
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .HomeTextBlock{
+        width: 450px;
+        height: 334px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Descripion{
+        text-align: center;
+    }
+
+    .MainButton{
+        border-radius: 50%;
+        width: 242px;
+        height: 242px;
+        background-color: var(--White);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-bottom: 90px;
+    }
+
+    .MainButton_Text{
+        font-size: 32px;
+        font-family: Bellefair;
+    }
+
+    .--Destination{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        padding-left: 38px;
+        padding-top: 136px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DestinationHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .DestinationIMG{
+        width: 300px;
+        height: 300px;
+        margin-top: 60px;
+        margin-bottom: 53px;
+    }
+    .DestinationIMG img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .DestinationTextBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 98px;
+        margin-right: 98px;
+    }
+
+    .DestinationNav{
+        display: flex;
+        flex-direction: row;
+        height: 34px;
+        width: 285.5px;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    h2{
+        font-size: 80px;
+        margin-bottom: 8px;
+    }
+
+    .DestinationDescription{
+        margin-bottom: 49px;
+    }
+
+    .DestinationInformation{
+        border-top: solid 1px rgb(56, 59, 75);
+        padding-top: 28px;
+        padding-left: 10%;
+        padding-right: 10%;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .Information{
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .--Crew{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        padding: 220px 155px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CrewTextBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TextHeader{
+        position: absolute;
+        top: 136px;
+        left: 38.5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .CrewBio{
+        text-align: center;
+    }
+
+    .RadioBox{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .CrewRadio{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.17);
+        margin-left: 16px;
+    }
+
+    .CrewRadio:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .CrewRadio--Active{
+        background-color: var(--White);
+    }
+
+    .--DesktopTechnology{
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+    }
 
 }
