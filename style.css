@@ -449,6 +449,7 @@ a{
 
     .TextName{
         margin-bottom: 11px;
+        text-wrap: nowrap;
     }
 
 
