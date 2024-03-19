@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="TopBar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
-        <nav class="TopBar-Block">
-            <div class="TopBar-Line"></div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="index.html">
-                    <b class="NavTextNumber">00</b>
-                    <span class="NavText">HOME</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="destination.html">
-                    <b class="NavTextNumber">01</b>
-                    <span class="NavText">DESTINATION</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="crew.html">
-                    <b class="NavTextNumber">02</b>
-                    <span class="NavText">CREW</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--active">
-                <a href="technology.html">
-                    <b class="NavTextNumber">03</b>
-                    <span class="NavText">TECHNOLOGY</span>
-                </a>
-            </div>
-        </nav>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+      <nav class="TopBar-Block">
+        <div class="TopBar-Line"></div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="index.html">
+            <b class="NavTextNumber">00</b>
+            <span class="NavText">HOME</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="destination.html">
+            <b class="NavTextNumber">01</b>
+            <span class="NavText">DESTINATION</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="crew.html">
+            <b class="NavTextNumber">02</b>
+            <span class="NavText">CREW</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--active">
+          <a href="technology.html">
+            <b class="NavTextNumber">03</b>
+            <span class="NavText">TECHNOLOGY</span>
+          </a>
+        </div>
+      </nav>
     </header>
     <section class="Contener --Technology">
-        <section class="TechnologyTextBlock">
-            <img class="TechnologyIMG" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle" id="IMG">
-            <div class="TechnologyHeader">
-                <h5 class="h5Number">03</h5>
-                <h5>SPACE LAUNCH 101</h5>
+      <section class="TechnologyTextBlock">
+        <img
+          class="TechnologyIMG"
+          src="assets/technology/image-launch-vehicle-portrait.jpg"
+          alt="Launch vehicle"
+          id="IMG"
+        />
+        <div class="TechnologyHeader">
+          <h5 class="h5Number">03</h5>
+          <h5>SPACE LAUNCH 101</h5>
+        </div>
+        <section class="BottomBlock">
+          <nav class="NavTechnology">
+            <div class="SliderTechnology SliderTechnology--Active" id="Slider1">
+              1
             </div>
-            <section class="BottomBlock">
-                <nav class="NavTechnology">
-                    <div class="SliderTechnology SliderTechnology--Active" id="Slider1">1</div>
-                    <div class="SliderTechnology" id="Slider2">2</div>
-                    <div class="SliderTechnology" id="Slider3">3 </div>
-                </nav>
-                <div class="TechnologyText">
-                    <span class="NavText TechnologyTextHeader">THE TERMINOLOGY…</span>
-                    <h4 class="TextName" id="Name">LAUNCH VEHICLE</h4>
-                    <p id="Description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-                </div>
-            </section>
+            <div class="SliderTechnology" id="Slider2">2</div>
+            <div class="SliderTechnology" id="Slider3">3</div>
+          </nav>
+          <div class="TechnologyText">
+            <span class="NavText TechnologyTextHeader">THE TERMINOLOGY…</span>
+            <h4 class="TextName" id="Name">LAUNCH VEHICLE</h4>
+            <p id="Description">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
         </section>
+      </section>
     </section>
     <script src="script/technology.js"></script>
-</body>
+  </body>
 </html>

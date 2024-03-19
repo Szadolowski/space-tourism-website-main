@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="TopBar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
-        <nav class="TopBar-Block">
-            <div class="TopBar-Line"></div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="index.html">
-                    <b class="NavTextNumber">00</b>
-                    <span class="NavText">HOME</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--active">
-                <a href="destination.html">
-                    <b class="NavTextNumber">01</b>
-                    <span class="NavText">DESTINATION</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="crew.html">
-                    <b class="NavTextNumber">02</b>
-                    <span class="NavText">CREW</span>
-                </a>
-            </div>
-            <div class="NavSwitch NavSwitch--hover">
-                <a href="technology.html">
-                    <b class="NavTextNumber">03</b>
-                    <span class="NavText">TECHNOLOGY</span>
-                </a>
-            </div>
-        </nav>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+      <nav class="TopBar-Block">
+        <div class="TopBar-Line"></div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="index.html">
+            <b class="NavTextNumber">00</b>
+            <span class="NavText">HOME</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--active">
+          <a href="destination.html">
+            <b class="NavTextNumber">01</b>
+            <span class="NavText">DESTINATION</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="crew.html">
+            <b class="NavTextNumber">02</b>
+            <span class="NavText">CREW</span>
+          </a>
+        </div>
+        <div class="NavSwitch NavSwitch--hover">
+          <a href="technology.html">
+            <b class="NavTextNumber">03</b>
+            <span class="NavText">TECHNOLOGY</span>
+          </a>
+        </div>
+      </nav>
     </header>
     <section class="Contener --Destination">
-        <div class="DestinationHeader">
-            <h5 class="h5Number">01</h5>
-            <h5>PICK YOUT DESTINATION</h5>
+      <div class="DestinationHeader">
+        <h5 class="h5Number">01</h5>
+        <h5>PICK YOUT DESTINATION</h5>
+      </div>
+      <div class="DestinationIMG">
+        <img id="IMG" src="assets/destination/image-moon.webp" alt="Moon" />
+      </div>
+      <div class="DestinationTextBlock">
+        <nav class="DestinationNav">
+          <div class="NavSwitch NavSwitch--active" id="Nav1">
+            <span class="NavText">MOON</span>
+          </div>
+          <div class="NavSwitch NavSwitch--hover" id="Nav2">
+            <span class="NavText">MARS</span>
+          </div>
+          <div class="NavSwitch NavSwitch--hover " id="Nav3">
+            <span class="NavText">EUROPA</span>
+          </div>
+          <div class="NavSwitch NavSwitch--hover" id="Nav4">
+            <span class="NavText">TITAN</span>
+          </div>
+        </nav>
+        <div class="DestinationName">
+          <h2 id="Name">MOON</h2>
         </div>
-        <div class="DestinationIMG">
-            <img id="IMG" src="assets/destination/image-moon.webp" alt="Moon"> 
+        <div class="DestinationDescription">
+          <p id="Description">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
         </div>
-        <div class="DestinationTextBlock">
-            <nav class="DestinationNav">
-                <div class="NavSwitch NavSwitch--active" id="Nav1">
-                    <span class="NavText">MOON</span>
-                </div>
-                <div class="NavSwitch NavSwitch--hover" id="Nav2">
-                    <span class="NavText">MARS</span>
-                </div>
-                <div class="NavSwitch NavSwitch--hover "id="Nav3">
-                    <span class="NavText">EUROPA</span>
-                </div>
-                <div class="NavSwitch NavSwitch--hover" id="Nav4">
-                    <span class="NavText">TITAN</span>
-                </div>
-            </nav>
-            <div class="DestinationName">
-                <h2 id="Name">MOON</h2>
-            </div>
-            <div class="DestinationDescription">
-                <p id="Description">
-                    See our planet as you’ve never seen it before. 
-                    A perfect relaxing trip away to help regain perspective and come back refreshed. 
-                    While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-                </p>
-            </div>
-            <div class="DestinationInformation">
-                <div class="Information">
-                    <p class="--Subheading2">AVG. DISTANCE</p>
-                    <p class="--Subheading1" id="Distance">384,400 KM</p>
-                </div>
-                <div class="Information">
-                    <p class="--Subheading2">EST. TRAVEL TIME</p>
-                    <p class="--Subheading1" id="Travel">3 DAYS</p>
-                </div>
-            </div>
+        <div class="DestinationInformation">
+          <div class="Information">
+            <p class="--Subheading2">AVG. DISTANCE</p>
+            <p class="--Subheading1" id="Distance">384,400 KM</p>
+          </div>
+          <div class="Information">
+            <p class="--Subheading2">EST. TRAVEL TIME</p>
+            <p class="--Subheading1" id="Travel">3 DAYS</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <script src="script/destination.js"></script>
-</body>
+  </body>
 </html>
